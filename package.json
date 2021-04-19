@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "tailwindcss": "^2.1.1"
-  }
+  },
+  "name": "wolfaton",
+  "description": "Repository for Wolfaton",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenzF/Wolfaton.git"
+  },
+  "author": "Henri Feldmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenzF/Wolfaton/issues"
+  },
+  "homepage": "https://github.com/HenzF/Wolfaton#readme"
 }
