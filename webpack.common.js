@@ -4,8 +4,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./public/src/scripts/index.js",
-  mode: "development",
+  entry: "./docs/src/scripts/index.js",
   module: {
     rules: [
       {
@@ -25,15 +24,9 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "docs/dist/"),
+    publicPath: "docs/dist/",
     filename: "bundle.js"
-  },
-  devServer: {
-    contentBase: path.join(__dirname, "docs/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
-    hotOnly: true
   },
   plugins: [
     new MiniCssExtractPlugin({

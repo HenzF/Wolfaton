@@ -10,8 +10,8 @@
   "version": "1.0.0",
   "main": "docs/src/scripts/index.js",
   "scripts": {
-    "start": "npm run watch:css && webpack-dev-server --mode development",
-    "build": "npm run watch:css && webpack --mode development",
+    "start": "npm run watch:css && webpack-dev-server --config webpack.dev.js",
+    "build": "npm run watch:css && webpack --config webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch:css": "npx postcss tailwind.css -o docs/src/styles/styles.css"
@@ -39,6 +39,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.1.8"
+    "webpack-dev-server": "^3.1.8",
+    "webpack-merge": "^5.7.3"
   }
 }
