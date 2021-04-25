@@ -30,7 +30,7 @@ module.exports = {
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, "docs/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
@@ -41,9 +41,9 @@ module.exports = {
         chunkFilename: "styles.css"
     }),
       new HtmlWebPackPlugin({
-      template: "./public/index.html",
+      template: "./docs/index.html",
       filename: "./index.html",
-      favicon: "./public/favicon.ico"
+      favicon: "./docs/favicon.ico"
     })
   ]
 };

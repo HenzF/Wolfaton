@@ -8,13 +8,13 @@
   "name": "wolfaton",
   "description": "Repository for Wolfaton",
   "version": "1.0.0",
-  "main": "public/src/scripts/index.js",
+  "main": "docs/src/scripts/index.js",
   "scripts": {
     "start": "npm run watch:css && webpack-dev-server --mode development",
     "build": "npm run watch:css && webpack --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:css": "npx postcss tailwind.css -o public/src/styles/styles.css"
+    "watch:css": "npx postcss tailwind.css -o docs/src/styles/styles.css"
   },
   "repository": {
     "type": "git",
